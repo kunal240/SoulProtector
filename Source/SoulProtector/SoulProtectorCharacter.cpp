@@ -14,7 +14,7 @@
 
 ASoulProtectorCharacter::ASoulProtectorCharacter()
 {
-	// Set size for collision capsule
+	// Set size for collision capsule 
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
 	// set our turn rates for input
