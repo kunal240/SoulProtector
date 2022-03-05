@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "SoulProtector (Debug)",
+			"request": "launch",
+			"preLaunchTask": "SoulProtector Win64 Debug Build",
+			"program": "E:\\SufferingSouls\\SoulProtector\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "E:\\UE4_Returns\\UE4\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "SoulProtector (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "SoulProtector Win64 DebugGame Build",
+			"program": "E:\\SufferingSouls\\SoulProtector\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "E:\\UE4_Returns\\UE4\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "SoulProtector (Development)",
+			"request": "launch",
+			"preLaunchTask": "SoulProtector Win64 Development Build",
+			"program": "E:\\SufferingSouls\\SoulProtector\\Binaries\\Win64\\UE4.exe",
+			"args": [
+			],
+			"cwd": "E:\\UE4_Returns\\UE4\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "SoulProtector (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "SoulProtector Win64 Shipping Build",
+			"program": "E:\\SufferingSouls\\SoulProtector\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "E:\\UE4_Returns\\UE4\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "SoulProtector (Test)",
+			"request": "launch",
+			"preLaunchTask": "SoulProtector Win64 Test Build",
+			"program": "E:\\SufferingSouls\\SoulProtector\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "E:\\UE4_Returns\\UE4\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "SoulProtectorEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "SoulProtectorEditor Win64 Debug Build",
+			"program": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"E:\\SufferingSouls\\SoulProtector\\SoulProtector.uproject"
+			],
+			"cwd": "E:\\UE4_Returns\\UE4\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "SoulProtectorEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "SoulProtectorEditor Win64 DebugGame Build",
+			"program": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"E:\\SufferingSouls\\SoulProtector\\SoulProtector.uproject"
+			],
+			"cwd": "E:\\UE4_Returns\\UE4\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "SoulProtectorEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "SoulProtectorEditor Win64 Development Build",
+			"program": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"E:\\SufferingSouls\\SoulProtector\\SoulProtector.uproject"
+			],
+			"cwd": "E:\\UE4_Returns\\UE4\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=E:\\SufferingSouls\\SoulProtector\\SoulProtector.uproject",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "E:\\UE4_Returns\\UE4\\UE_4.26"
+		}
+	]
+}

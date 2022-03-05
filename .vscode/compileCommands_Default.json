@@ -1,0 +1,37 @@
+[
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\SoulProtector.Build.cs",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.182.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\SoulProtector.cpp",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.182.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\SoulProtector.h",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.182.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\SoulProtectorCharacter.cpp",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.182.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\SoulProtectorCharacter.h",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.182.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\SoulProtectorGameMode.cpp",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.182.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\SoulProtectorGameMode.h",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.182.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	}
+]
