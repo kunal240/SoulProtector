@@ -35,6 +35,7 @@ void AHermes::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
+	PlayerInputComponent->BindAction(TEXT("Punch"), EInputEvent::IE_Pressed, this, &AHermes::ActionRight);
 }
 
 void AHermes::MoveForward(float AxisValue)
@@ -45,4 +46,9 @@ void AHermes::MoveForward(float AxisValue)
 void AHermes::MoveRight(float AxisValue)
 {
 	AddMovementInput(GetActorRightVector() * AxisValue);
+}
+
+void AHermes::ActionRight()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Implement Combat"));
 }
