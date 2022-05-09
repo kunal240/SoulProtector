@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+#include "Components/SkeletalMeshComponent.h"
 #include "Hermes.h"
 
 // Sets default values
@@ -35,7 +35,7 @@ void AHermes::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction(TEXT("Punch"), EInputEvent::IE_Pressed, this, &AHermes::ActionRight);
+	PlayerInputComponent->BindAction(TEXT("Punch"), EInputEvent::IE_Pressed , this, &AHermes::Punch);
 }
 
 void AHermes::MoveForward(float AxisValue)
@@ -48,7 +48,9 @@ void AHermes::MoveRight(float AxisValue)
 	AddMovementInput(GetActorRightVector() * AxisValue);
 }
 
-void AHermes::ActionRight()
+void AHermes::Punch()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Implement Combat"));
+	UE_LOG(LogTemp, Warning, TEXT("Punch please"));
+	PlayAnimMontage(PunchMontage);
 }
+

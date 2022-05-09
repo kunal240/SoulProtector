@@ -30,6 +30,10 @@ private:
 
 	void MoveForward(float AxisValue);
 	void MoveRight(float AxisValue);
-	void ActionRight();
+
+	UPROPERTY(EditAnywhere)
+	UAnimMontage* PunchMontage;
+	
+	void Punch();
 
 };
