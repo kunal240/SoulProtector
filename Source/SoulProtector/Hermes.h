@@ -26,14 +26,16 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+public:
+	UFUNCTION(BlueprintPure, Category="LifeStatus")
+	bool IsDead();
+
 private:
 
 	void MoveForward(float AxisValue);
 	void MoveRight(float AxisValue);
 
-	UPROPERTY(EditAnywhere)
-	UAnimMontage* PunchMontage;
+	float Health = 100.0f;
 	
-	void Punch();
 
 };

@@ -1,3 +1,10 @@
+.git
+.vs
 .vscode
 Content
+DerivedDataCache
 Intermediate
+Saved
+Script
+StaticMesh
+Win64

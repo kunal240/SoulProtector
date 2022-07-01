@@ -1,5 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "Kismet/GameplayStatics.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Hermes.h"
 
@@ -35,7 +36,6 @@ void AHermes::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction(TEXT("Punch"), EInputEvent::IE_Pressed , this, &AHermes::Punch);
 }
 
 void AHermes::MoveForward(float AxisValue)
@@ -48,9 +48,7 @@ void AHermes::MoveRight(float AxisValue)
 	AddMovementInput(GetActorRightVector() * AxisValue);
 }
 
-void AHermes::Punch()
+bool AHermes::IsDead()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Punch please"));
-	PlayAnimMontage(PunchMontage);
+	return Health <= 0.f;
 }
-
