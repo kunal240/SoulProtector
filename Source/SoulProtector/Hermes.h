@@ -6,6 +6,8 @@
 #include "GameFramework/Character.h"
 #include "Hermes.generated.h"
 
+class ACaduceus;
+
 UCLASS()
 class SOULPROTECTOR_API AHermes : public ACharacter
 {
@@ -36,6 +38,13 @@ private:
 	void MoveRight(float AxisValue);
 
 	float Health = 100.0f;
+
+	void Aim();
 	
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<ACaduceus> WeaponClass;
+
+	UPROPERTY()
+	ACaduceus* Caduceus;
 
 };

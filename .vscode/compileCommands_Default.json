@@ -1,77 +1,87 @@
 [
 	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\Caduceus.cpp",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\Caduceus.h",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\DoorActor.cpp",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\DoorActor.h",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\Hermes.cpp",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\Hermes.h",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\HermesGameModeBase.cpp",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\HermesGameModeBase.h",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\OpenDoor.cpp",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\OpenDoor.h",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\SoulProtector.Build.cs",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\SoulProtector.cpp",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\SoulProtector.h",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\SoulProtectorCharacter.cpp",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\SoulProtectorCharacter.h",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\SoulProtectorGameMode.cpp",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\SoulProtectorGameMode.h",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.185.rsp\"",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.195.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	}
 ]

@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "Kismet/GameplayStatics.h"
-#include "Components/SkeletalMeshComponent.h"
 #include "Hermes.h"
+#include "Caduceus.h"
 
 // Sets default values
 AHermes::AHermes()
@@ -17,6 +17,8 @@ void AHermes::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	Caduceus = GetWorld()->SpawnActor<ACaduceus>(WeaponClass);
+	Caduceus->SetActorHiddenInGame(false);
 }
 
 // Called every frame
@@ -36,6 +38,7 @@ void AHermes::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis(TEXT("LookUpRate"), this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis(TEXT("TurnRate"), this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
+	PlayerInputComponent->BindAction(TEXT("Aim"), EInputEvent::IE_Pressed, this, &AHermes::Aim);
 }
 
 void AHermes::MoveForward(float AxisValue)
@@ -51,4 +54,9 @@ void AHermes::MoveRight(float AxisValue)
 bool AHermes::IsDead()
 {
 	return Health <= 0.f;
+}
+
+void AHermes::Aim()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Add aiming mechanism"));
 }
