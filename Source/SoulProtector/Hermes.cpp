@@ -18,7 +18,10 @@ void AHermes::BeginPlay()
 	Super::BeginPlay();
 	
 	Caduceus = GetWorld()->SpawnActor<ACaduceus>(WeaponClass);
-	Caduceus->SetActorHiddenInGame(false);
+	Caduceus->SetActorHiddenInGame(true);
+
+	Caduceus->SetOwner(this);
+	Caduceus->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
 }
 
 // Called every frame
@@ -39,6 +42,7 @@ void AHermes::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis(TEXT("TurnRate"), this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction(TEXT("Aim"), EInputEvent::IE_Pressed, this, &AHermes::Aim);
+	PlayerInputComponent->BindAction(TEXT("Aim"), EInputEvent::IE_Released, this, &AHermes::Retract);
 }
 
 void AHermes::MoveForward(float AxisValue)
@@ -58,5 +62,13 @@ bool AHermes::IsDead()
 
 void AHermes::Aim()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Add aiming mechanism"));
+	Aiming = true;
+	Caduceus->SetActorHiddenInGame(false);
+	Caduceus->Cast();
+}
+
+void AHermes::Retract()
+{
+	Aiming = false;
+	Caduceus->SetActorHiddenInGame(true);
 }

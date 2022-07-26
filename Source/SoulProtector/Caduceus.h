@@ -30,4 +30,10 @@ private:
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* Mesh;
 
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* RayParticle;
+
+public:
+	void Cast();
+
 };

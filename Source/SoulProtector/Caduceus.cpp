@@ -3,6 +3,7 @@
 
 #include "Caduceus.h"
 #include "Components/StaticMeshComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ACaduceus::ACaduceus()
@@ -30,5 +31,11 @@ void ACaduceus::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void ACaduceus::Cast()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Casting Healing Ray"));
+	UGameplayStatics::SpawnEmitterAttached(RayParticle, Mesh, TEXT("EmitRay"));
 }
 

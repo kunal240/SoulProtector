@@ -32,6 +32,9 @@ public:
 	UFUNCTION(BlueprintPure, Category="LifeStatus")
 	bool IsDead();
 
+	UPROPERTY(BlueprintReadWrite)
+	bool Aiming;
+
 private:
 
 	void MoveForward(float AxisValue);
@@ -40,6 +43,7 @@ private:
 	float Health = 100.0f;
 
 	void Aim();
+	void Retract();
 	
 	UPROPERTY(EditDefaultsOnly)
 	TSubclassOf<ACaduceus> WeaponClass;
