@@ -42,6 +42,8 @@ private:
 
 	float Health = 100.0f;
 
+public:
+
 	void Aim();
 	void Retract();
 	

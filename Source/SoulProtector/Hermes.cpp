@@ -18,10 +18,13 @@ void AHermes::BeginPlay()
 	Super::BeginPlay();
 	
 	Caduceus = GetWorld()->SpawnActor<ACaduceus>(WeaponClass);
-	Caduceus->SetActorHiddenInGame(true);
 
-	Caduceus->SetOwner(this);
+	if(Caduceus == nullptr)
+	return; 
+
+	Caduceus->SetActorHiddenInGame(true);
 	Caduceus->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
+	Caduceus->SetOwner(this);
 }
 
 // Called every frame
@@ -62,6 +65,7 @@ bool AHermes::IsDead()
 
 void AHermes::Aim()
 {
+	UE_LOG(LogTemp, Warning, TEXT("Aiming"));
 	Aiming = true;
 	Caduceus->SetActorHiddenInGame(false);
 	Caduceus->Cast();
@@ -69,6 +73,7 @@ void AHermes::Aim()
 
 void AHermes::Retract()
 {
+	UE_LOG(LogTemp, Warning, TEXT("NotAiming"));
 	Aiming = false;
 	Caduceus->SetActorHiddenInGame(true);
 }

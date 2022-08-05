@@ -27,13 +27,28 @@ private:
 	UPROPERTY(VisibleAnywhere)
 	USceneComponent* Root;
 
-	UPROPERTY(VisibleAnywhere)
-	UStaticMeshComponent* Mesh;
-
 	UPROPERTY(EditAnywhere)
 	UParticleSystem* RayParticle;
 
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* HitImpact;
+
+	UPROPERTY(EditAnywhere)
+	USoundBase* BeamEmit;
+
+public:
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	UStaticMeshComponent* Mesh;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float MaxRange = 5000.0f;
+
+
 public:
 	void Cast();
+
+	UFUNCTION(BlueprintCallable)
+	void GetPlayerViewPointBP(AController* OwnerController, FVector& OutLoc, FRotator& OutRot) const;
 
 };
