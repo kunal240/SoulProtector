@@ -42,6 +42,9 @@ private:
 
 	float Health = 100.0f;
 
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<class USphereComponent> CollisionClass;
+
 public:
 
 	void Aim();
@@ -52,5 +55,8 @@ public:
 
 	UPROPERTY()
 	ACaduceus* Caduceus;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	float MeleeDamage = 100.0f;
 
 };

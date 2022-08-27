@@ -58,10 +58,16 @@ void ACaduceus::Cast()
 			if(bSuccess)
 			{
 				DrawDebugPoint(GetWorld(), Hit.Location, 20, FColor::Cyan, true);
-				DrawDebugLine(GetWorld(), Location, End, FColor::Yellow, true);
 				FVector HitDirection = -Rotation.Vector();
-				AActor* Hurt = Hit.GetActor();
-				UE_LOG(LogTemp, Error, TEXT("%s is hit"), *Hurt->GetName());
+				AActor* ActorHurt = Hit.GetActor();
+
+				if(ActorHurt != nullptr)
+				{
+					UE_LOG(LogTemp, Error, TEXT("%s is hit"), *ActorHurt->GetName());
+					//FPointDamageEvent DamageEvent(Damage, Hit, HitDirection, nullptr);
+					//ActorHurt->TakeDamage(Damage, DamageEvent, OwnerController, this);
+				}
+				
 			}
 		}
 	}

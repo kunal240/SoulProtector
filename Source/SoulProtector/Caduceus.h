@@ -44,6 +44,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float MaxRange = 5000.0f;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Damage = 100.0f;
+
 
 public:
 	void Cast();

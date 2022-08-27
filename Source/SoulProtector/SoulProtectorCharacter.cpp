@@ -138,3 +138,31 @@ void ASoulProtectorCharacter::MoveRight(float Value)
 		AddMovementInput(Direction, Value);
 	}
 }
+
+float ASoulProtectorCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor *DamageCauser)
+{
+	float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	DamageToApply = FMath::Min(Health, DamageAmount);
+	Health-=DamageToApply;
+	UE_LOG(LogTemp, Warning, TEXT("Damage taken, health now: %f"), Health);
+	return DamageToApply;
+}
+
+void ASoulProtectorCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+
+	Health = MaxHealth;
+}
+
+bool ASoulProtectorCharacter::IsDead()
+{
+	if(Health <= 0.0f)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}

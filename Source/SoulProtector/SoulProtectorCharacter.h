@@ -68,5 +68,24 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+private:
+
+	UPROPERTY(EditDefaultsOnly)
+	float MaxHealth = 500.0f;
+
+	UPROPERTY(VisibleAnywhere)
+	float Health;
+
+
+public:
+	UFUNCTION(BlueprintPure, Category = "EnemyLife")
+	bool IsDead();
+
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor *DamageCauser) override;
 };
 

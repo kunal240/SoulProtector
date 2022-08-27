@@ -1,5 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
+#include "Components/SphereComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Hermes.h"
 #include "Caduceus.h"
@@ -25,6 +25,12 @@ void AHermes::BeginPlay()
 	Caduceus->SetActorHiddenInGame(true);
 	Caduceus->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
 	Caduceus->SetOwner(this);
+
+	TArray<UActorComponent*> Collision = GetComponentsByClass(CollisionClass);
+	for(int i = 0; i < Collision.Num(); i++)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("%s"), *Collision[i]->GetName());
+	}
 }
 
 // Called every frame
