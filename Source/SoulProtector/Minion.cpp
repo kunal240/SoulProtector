@@ -1,4 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
+#include "TimerManager.h"
 #include "Components/SphereComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Hermes.h"
@@ -36,16 +37,26 @@ void AMinion::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 float AMinion::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor *DamageCauser)
 {
 	float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
-	DamageToApply = FMath::Min(Health, DamageAmount);
-	Health-=DamageToApply;
-	UE_LOG(LogTemp, Error, TEXT("Damage taken, health now: %f"), Health);
-	CheckHealth();
+	DamageToApply = FMath::Min(Infestation, DamageAmount);
+	Infestation-=DamageToApply;
+	UE_LOG(LogTemp, Error, TEXT("Damage taken, corruption now: %f"), Infestation);
+	CheckInfestation();
 	return DamageToApply;
 }
 
 void AMinion::CheckHealth()
 {
+	FTimerHandle Timer;
+
 	if(Health <= 0.0f)
+	{
+		GetWorldTimerManager().SetTimer(Timer, this, &AMinion::Revive, 60.0f,  false);
+	}
+}
+
+void AMinion::CheckInfestation()
+{
+	if(Infestation <= 0.0f)
 	{
 		FTransform SpawnTransform;
 		FActorSpawnParameters SpawnParameters;
@@ -61,5 +72,25 @@ void AMinion::CheckHealth()
 		
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), TransformParticle, Location, GetActorRotation());
 		Destroy();
+	}
+}
+
+bool AMinion::VerifyLife()
+{
+	if(Health <= 0.0f)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+void AMinion::Revive()
+{
+	if(IsValid(this))
+	{
+		Health = 5000.0f;
 	}
 }

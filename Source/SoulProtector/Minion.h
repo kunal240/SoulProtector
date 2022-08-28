@@ -33,13 +33,24 @@ private:
 	UPROPERTY(EditAnywhere)
 	UParticleSystem* TransformParticle;
 
+	virtual void Revive();
+
 public:
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor *DamageCauser) override;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
-	float Health = 3000.0f;
+	float Health = 5000.0f;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	float Infestation = 5000.0f;
 
 	UFUNCTION(BlueprintCallable)
 	void CheckHealth();
+
+	UFUNCTION(BlueprintCallable)
+	void CheckInfestation();
+
+	UFUNCTION(BlueprintPure, Category="AliveStatus")
+	bool VerifyLife();
 
 };
