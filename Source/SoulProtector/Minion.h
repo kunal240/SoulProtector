@@ -35,6 +35,8 @@ private:
 
 	virtual void Revive();
 
+	APawn* Playerpawn;
+
 public:
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor *DamageCauser) override;
 
@@ -52,5 +54,8 @@ public:
 
 	UFUNCTION(BlueprintPure, Category="AliveStatus")
 	bool VerifyLife();
+
+	UFUNCTION(BlueprintCallable)
+	bool Attack();
 
 };

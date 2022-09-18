@@ -11,13 +11,14 @@ AMinion::AMinion()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-
 }
 
 // Called when the game starts or when spawned
 void AMinion::BeginPlay()
 {
 	Super::BeginPlay();
+
+	Playerpawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 }
 
 // Called every frame
@@ -91,6 +92,19 @@ void AMinion::Revive()
 {
 	if(IsValid(this))
 	{
+		UE_LOG(LogTemp, Error, TEXT("Reviving Now"));
 		Health = 5000.0f;
+	}
+}
+
+bool AMinion::Attack()
+{
+	if(GetDistanceTo(Playerpawn) < 250.0f)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
 	}
 }

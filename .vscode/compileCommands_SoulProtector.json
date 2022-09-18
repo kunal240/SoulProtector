@@ -1,5 +1,55 @@
 [
 	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTService_CheckDeath.cpp",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTService_CheckDeath.h",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTService_PlayerLocation.cpp",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTService_PlayerLocation.h",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTService_PlayerLocationIfSeen.cpp",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTService_PlayerLocationIfSeen.h",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTTask_RemoveBlackboardValue.cpp",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTTask_RemoveBlackboardValue.h",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTTaskAttack.cpp",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTTaskAttack.h",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\Caduceus.cpp",
 		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
@@ -46,6 +96,16 @@
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\Minion.h",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\MinionAIController.cpp",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\MinionAIController.h",
 		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
