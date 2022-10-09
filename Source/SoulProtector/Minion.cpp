@@ -19,6 +19,7 @@ void AMinion::BeginPlay()
 	Super::BeginPlay();
 
 	Playerpawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+	Player = Cast<AHermes>(Playerpawn);
 }
 
 // Called every frame
@@ -68,7 +69,8 @@ void AMinion::CheckInfestation()
 		UE_LOG(LogTemp, Warning, TEXT("Spawn Now and Vanish"));
 		if(NormieClass != nullptr)
 		{
-			GetWorld()->SpawnActor<AActor>(NormieClass, Location, GetActorRotation(), SpawnParameters);
+			FVector Direction = Playerpawn->GetActorLocation();
+			GetWorld()->SpawnActor<AActor>(NormieClass, Location, Direction.Rotation(), SpawnParameters);
 		}
 		
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), TransformParticle, Location, GetActorRotation());
@@ -99,12 +101,21 @@ void AMinion::Revive()
 
 bool AMinion::Attack()
 {
-	if(GetDistanceTo(Playerpawn) < 250.0f)
+	if(Player != nullptr)
 	{
-		return true;
+		if(GetDistanceTo(Playerpawn) < 250.0f && Player->Health > 0.0f)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+
 	}
 	else
 	{
 		return false;
 	}
+
 }

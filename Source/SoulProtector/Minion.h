@@ -36,6 +36,7 @@ private:
 	virtual void Revive();
 
 	APawn* Playerpawn;
+	class AHermes* Player;
 
 public:
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor *DamageCauser) override;
@@ -45,6 +46,9 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
 	float Infestation = 5000.0f;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	float AttackDamage = 50.0f;
 
 	UFUNCTION(BlueprintCallable)
 	void CheckHealth();

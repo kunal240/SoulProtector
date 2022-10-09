@@ -40,8 +40,6 @@ private:
 	void MoveForward(float AxisValue);
 	void MoveRight(float AxisValue);
 
-	float Health = 100.0f;
-
 	UPROPERTY(EditDefaultsOnly)
 	TSubclassOf<class USphereComponent> CollisionClass;
 
@@ -58,5 +56,8 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
 	float MeleeDamage = 100.0f;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	float Health = 10000.0f;
 
 };
