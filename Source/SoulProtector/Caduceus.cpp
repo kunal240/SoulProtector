@@ -57,7 +57,8 @@ void ACaduceus::Cast()
 			bool bSuccess = GetWorld()->LineTraceSingleByChannel(Hit, Location, End, ECollisionChannel::ECC_GameTraceChannel1);
 			if(bSuccess)
 			{
-				DrawDebugPoint(GetWorld(), Hit.Location, 20, FColor::Cyan, true);
+				//DrawDebugPoint(GetWorld(), Hit.Location, 20, FColor::Cyan, true);
+				End = Hit.Location;
 				FVector HitDirection = -Rotation.Vector();
 				AActor* ActorHurt = Hit.GetActor();
 
