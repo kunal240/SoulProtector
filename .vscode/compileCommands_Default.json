@@ -1,15 +1,5 @@
 [
 	{
-		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTDecorator_ReorientCone.cpp",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.219.rsp\"",
-		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
-	},
-	{
-		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTDecorator_ReorientCone.h",
-		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.219.rsp\"",
-		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
-	},
-	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTService_CheckDeath.cpp",
 		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.219.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
@@ -36,6 +26,16 @@
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTService_PlayerLocationIfSeen.h",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTService_PresenceIndicator.cpp",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTService_PresenceIndicator.h",
 		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.219.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
@@ -86,6 +86,16 @@
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\DoorActor.h",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\Ghoul.cpp",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\Ghoul.h",
 		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default\\SoulProtector.219.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
