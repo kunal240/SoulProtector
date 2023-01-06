@@ -10,6 +10,16 @@
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
 	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTService_CheckPlayerProximity.cpp",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTService_CheckPlayerProximity.h",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTService_PlayerLocation.cpp",
 		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
@@ -36,6 +46,16 @@
 	},
 	{
 		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTService_PresenceIndicator.h",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTTask_PlayerProximity.cpp",
+		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
+		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "E:\\\\SufferingSouls\\\\SoulProtector\\\\Source\\\\SoulProtector\\\\BTTask_PlayerProximity.h",
 		"command": "cl.exe @\"E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector\\SoulProtector.219.rsp\"",
 		"directory": "E:\\UE4_Returns\\UE4\\UE_4.26\\Engine\\Source"
 	},
