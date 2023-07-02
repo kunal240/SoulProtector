@@ -36,9 +36,15 @@ public:
 	bool Aiming;
 
 private:
+	class AHermes* Hermes;
+
+private:
 
 	void MoveForward(float AxisValue);
 	void MoveRight(float AxisValue);
+	
+	void FasterSpeed();
+	void NormalSpeed();
 
 	UPROPERTY(EditDefaultsOnly)
 	TSubclassOf<class USphereComponent> CollisionClass;
@@ -59,5 +65,8 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
 	float Health = 10000.0f;
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void DisplayDash();
 
 };

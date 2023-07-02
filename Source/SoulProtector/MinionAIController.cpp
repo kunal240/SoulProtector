@@ -1,10 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
+#include "MinionAIController.h"
 #include "Kismet/GameplayStatics.h"
 #include "Hermes.h"
 #include "Minion.h"
 #include "BehaviorTree/BlackboardComponent.h"
-#include "MinionAIController.h"
+
 
 void AMinionAIController::BeginPlay()
 {

@@ -5,7 +5,7 @@
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "AIController.h"
-#include "Minion.h"
+#include "Ghoul.h"
 
 UBTService_PlayerLocationIfSeen::UBTService_PlayerLocationIfSeen()
 {

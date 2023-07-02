@@ -1,9 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
+#include "Minion.h"
 #include "TimerManager.h"
 #include "Components/SphereComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Hermes.h"
-#include "Minion.h"
+
 
 // Sets default values
 AMinion::AMinion()

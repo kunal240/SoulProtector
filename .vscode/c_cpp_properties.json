@@ -4,14 +4,12 @@
             "name": "SoulProtectorEditor Editor Win64 Development (SoulProtector)",
             "intelliSenseMode": "msvc-x64",
             "compileCommands": "E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_SoulProtector.json",
-            "cStandard": "c17",
             "cppStandard": "c++17"
         },
         {
             "name": "Win32",
             "intelliSenseMode": "msvc-x64",
             "compileCommands": "E:\\SufferingSouls\\SoulProtector\\.vscode\\compileCommands_Default.json",
-            "cStandard": "c17",
             "cppStandard": "c++17"
         }
     ],

@@ -32,3 +32,14 @@ void AGhoul::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 }
 
+bool AGhoul::CheckLife()
+{
+	if(Health <= 0.0f)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}

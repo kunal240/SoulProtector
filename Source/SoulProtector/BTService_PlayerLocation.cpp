@@ -4,12 +4,12 @@
 #include "BTService_PlayerLocation.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Kismet/GameplayStatics.h"
-#include "Minion.h"
+#include "Ghoul.h"
 #include "AIController.h"
 
 UBTService_PlayerLocation::UBTService_PlayerLocation()
 {
-    NodeName = TEXT("Update Player Location");
+    NodeName = TEXT("Update Trigger Location");
 }
 
 void UBTService_PlayerLocation::TickNode(UBehaviorTreeComponent &OwnerComp, uint8 *NodeMemory, float DeltaSeconds)
@@ -23,6 +23,20 @@ void UBTService_PlayerLocation::TickNode(UBehaviorTreeComponent &OwnerComp, uint
         return;
     }
 
-    OwnerComp.GetBlackboardComponent()->SetValueAsVector(GetSelectedBlackboardKey(), PlayerPawn->GetActorLocation());
+    TArray<AActor*> Triggers;
+    FVector Trigger;
+    UGameplayStatics::GetAllActorsWithTag(GetWorld(),TEXT("Trigger"), Triggers);
+
+    if(Triggers[0] != nullptr)
+    {
+        Trigger = Triggers[0]->GetActorLocation();
+    }
+    else
+    {
+        Trigger = {76944.046875,91157.085938,487.743469};
+    }
+    
+    //OwnerComp.GetBlackboardComponent()->SetValueAsVector(GetSelectedBlackboardKey(), PlayerPawn->GetActorLocation());
+    OwnerComp.GetBlackboardComponent()->SetValueAsVector(GetSelectedBlackboardKey(), Trigger);
 }
 

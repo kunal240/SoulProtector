@@ -1,7 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-#include "Components/SphereComponent.h"
-#include "Kismet/GameplayStatics.h"
 #include "Hermes.h"
+#include "Components/ActorComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "Caduceus.h"
 
 // Sets default values
@@ -9,7 +10,6 @@ AHermes::AHermes()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
 }
 
 // Called when the game starts or when spawned
@@ -26,11 +26,7 @@ void AHermes::BeginPlay()
 	Caduceus->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
 	Caduceus->SetOwner(this);
 
-	TArray<UActorComponent*> Collision = GetComponentsByClass(CollisionClass);
-	for(int i = 0; i < Collision.Num(); i++)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("%s"), *Collision[i]->GetName());
-	}
+	Hermes = Cast<AHermes>(UGameplayStatics::GetPlayerPawn(this, 0));
 }
 
 // Called every frame
@@ -52,6 +48,8 @@ void AHermes::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction(TEXT("Aim"), EInputEvent::IE_Pressed, this, &AHermes::Aim);
 	PlayerInputComponent->BindAction(TEXT("Aim"), EInputEvent::IE_Released, this, &AHermes::Retract);
+	PlayerInputComponent->BindAction(TEXT("Sprint"), EInputEvent::IE_Pressed,this, &AHermes::FasterSpeed);
+	PlayerInputComponent->BindAction(TEXT("Sprint"), EInputEvent::IE_Released,this, &AHermes::NormalSpeed);
 }
 
 void AHermes::MoveForward(float AxisValue)
@@ -83,3 +81,41 @@ void AHermes::Retract()
 	Aiming = false;
 	Caduceus->SetActorHiddenInGame(true);
 }
+
+void AHermes::FasterSpeed()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Make him fast"));
+	UCharacterMovementComponent* MoveComp = Cast<UCharacterMovementComponent>(Hermes->GetCharacterMovement());
+	
+	if(MoveComp == nullptr)
+	{
+		return;
+	}
+	
+	float CurrentSpeed = MoveComp->MaxWalkSpeed;
+	UE_LOG(LogTemp, Warning, TEXT("%f"), CurrentSpeed);
+	MoveComp->MaxWalkSpeed = MoveComp->MaxWalkSpeed * 10;
+	UE_LOG(LogTemp, Warning, TEXT("%f"), MoveComp->MaxWalkSpeed);
+
+	DisplayDash();
+}
+
+void AHermes::NormalSpeed()
+{
+	DisplayDash();
+	
+	UE_LOG(LogTemp, Error, TEXT("Make him normal"));
+	UCharacterMovementComponent* MoveComp = Cast<UCharacterMovementComponent>(Hermes->GetCharacterMovement());
+
+	if(MoveComp == nullptr)
+	{
+		return;
+	}
+
+	float CurrentSpeed = MoveComp->MaxWalkSpeed;
+	UE_LOG(LogTemp, Error, TEXT("%f"), CurrentSpeed);
+	MoveComp->MaxWalkSpeed = 2600.0;
+	UE_LOG(LogTemp, Error, TEXT("%f"), MoveComp->MaxWalkSpeed);
+
+}
+

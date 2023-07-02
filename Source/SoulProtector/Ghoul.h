@@ -29,4 +29,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool CanSeeHermes;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	float Health = 100.0f;
+
+	UFUNCTION(BlueprintPure, Category="Check if Alive")
+	bool CheckLife();
+
 };

@@ -25,9 +25,6 @@ void AGhoulAIController::BeginPlay()
         {
             GetBlackboardComponent()->SetValueAsVector(TEXT("StartLocation"), GetPawn()->GetActorLocation());
             GetBlackboardComponent()->SetValueAsObject(TEXT("SelfActor"), GetPawn());
-            GetBlackboardComponent()->SetValueAsVector(TEXT("ConeOrigin"), GetPawn()->GetActorLocation());
-            FVector ConeDirection = GetPawn()->GetActorForwardVector() * -1.0;
-            GetBlackboardComponent()->SetValueAsVector(TEXT("ConeDirection"), ConeDirection);
         }
     }
 }
